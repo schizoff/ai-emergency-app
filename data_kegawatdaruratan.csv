@@ -1,0 +1,11 @@
+keluhan,diagnosis,terapi
+"Demam tinggi, kaku kuduk",Meningitis,"Antibiotik IV, CT scan kepala, rujuk ke RS"
+"Nyeri kepala hebat, demam",Ensefalitis,"Antivirus IV, CT scan kepala, rujuk ke RS"
+"Demam tinggi, kejang",Malaria serebral,"Antimalaria IV, kontrol kejang, rujuk ke RS"
+Kejang terus menerus,Status epileptikus,"Diazepam IV, kontrol kejang, observasi"
+"Nyeri dada mendadak, sesak",Infark miokard akut,"Aspirin, O2, EKG, rujuk cepat"
+"Sesak mendadak, tekanan darah turun",Syok anafilaktik,"Adrenalin IM, cairan IV cepat, rujuk"
+"Sesak napas berat, riwayat asma",Asma berat,"O2, nebulisasi salbutamol, steroid IV"
+Nyeri perut kanan bawah hebat,Apendisitis perforasi,"Cairan IV, antibiotik, rujuk operasi"
+"Pingsan, nadi cepat, perdarahan",Syok hipovolemik,"Cairan IV cepat, kontrol perdarahan, rujuk"
+"Trauma kepala, penurunan kesadaran",Cedera otak berat,"Stabilisasi jalan napas, CT scan, rujuk bedah"
