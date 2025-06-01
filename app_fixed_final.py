@@ -22,8 +22,7 @@ penunjang = st.text_area("Hasil Pemeriksaan Penunjang")
 st.markdown("---")
 
 # Input keluhan untuk analisis sederhana berbasis teks
-st.header("🔍 Analisis Berdasarkan Keluhan Utama")
-keluhan = st.text_input("Masukkan keluhan utama pasien (bebas):")
+
 
 if keluhan:
     hasil = data[data['keluhan'].str.contains(keluhan, case=False, na=False)]
