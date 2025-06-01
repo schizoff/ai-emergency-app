@@ -1,4 +1,4 @@
 anamnesis,pemeriksaan_fisik,penunjang,diagnosis,diagnosis_banding,terapi
-"Demam tinggi, nyeri kepala, leher kaku","Kaku kuduk (+), GCS 14, demam 39°C","LP: limfosit dominan, CT kepala normal",Meningitis,"['Ensefalitis', 'Demam tifoid', 'Infeksi sinus']","Antibiotik IV, cairan rehidrasi, CT scan bila memburuk"
+"Demam tinggi, nyeri kepala, leher kaku","Kaku kuduk (+), GCS <15, demam 39°C","LP: limfosit dominan, CT kepala normal",Meningitis,"['Ensefalitis', 'Demam tifoid', 'Infeksi sinus']","Antibiotik IV, cairan rehidrasi, CT scan bila memburuk"
 "Nyeri dada kiri menjalar ke lengan, muncul saat aktivitas","Tekanan darah 90/60, nadi 110x/menit, nyeri tekan retrosternal","EKG: elevasi segmen ST di DII, DIII, aVF",Infark miokard akut (STEMI inferior),"['Angina pektoris', 'Diseksi aorta', 'Perikarditis']","Aspirin, nitrat, oksigen, rujuk segera"
 "Sesak napas mendadak, riwayat alergi, setelah makan udang","Wheezing seluruh lapang paru, tekanan darah turun, sianosis","SpO2 85%, eosinofil meningkat",Syok anafilaktik,"['Asma berat', 'Syok septik', 'Edema paru']","Epinefrin IM, oksigen, cairan cepat, rujuk IGD"
