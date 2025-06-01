@@ -1,0 +1,11 @@
+keluhan,diagnosis,diagnosis_banding,terapi
+"Demam tinggi, kaku kuduk",Meningitis,"['Ensefalitis', 'Demam tifoid', 'Infeksi sinus']","Antibiotik empiris, cairan IV, CT-scan bila memungkinkan."
+"Nyeri kepala hebat, demam",Ensefalitis,"['Meningitis', 'Abses otak', 'Malaria serebral']","Antiviral, cairan IV, monitoring ketat."
+"Demam tinggi, kejang",Malaria serebral,"['Meningitis', 'Demam berdarah', 'Sepsis']","Antimalaria IV, cairan, antipiretik."
+Kejang terus menerus,Status epileptikus,"['Kejang demam kompleks', 'Hipoglikemia', 'Ensefalitis']","Diazepam IV, oksigenasi, monitor GCS."
+"Nyeri dada mendadak, sesak",Infark miokard akut,"['Angina pektoris', 'Emboli paru', 'Perikarditis']","Aspirin, nitrat, rujuk UGD dengan EKG."
+"Sesak mendadak, tekanan darah turun",Syok anafilaktik,"['Syok septik', 'Asma berat', 'Edema laring']","Epinefrin IM, oksigen, cairan cepat."
+"Sesak napas berat, riwayat asma",Asma berat,"['PPOK eksaserbasi akut', 'Emboli paru', 'Edema paru']","Bronkodilator nebulisasi, steroid, oksigen."
+Nyeri perut kanan bawah hebat,Apendisitis perforasi,"['Gastroenteritis', 'Kolik ureter', 'Kehamilan ektopik']","Operasi segera bila perforasi, cairan, antibiotik."
+"Pingsan, nadi cepat, perdarahan",Syok hipovolemik,"['Syok septik', 'Syok kardiogenik', 'Perdarahan internal']","Resusitasi cairan cepat, identifikasi sumber perdarahan."
+"Trauma kepala, penurunan kesadaran",Cedera otak berat,"['Stroke', 'Hipoglikemia', 'Overdosis obat']","CT-scan kepala, stabilisasi jalan napas, observasi GCS."
