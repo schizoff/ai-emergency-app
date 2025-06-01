@@ -28,7 +28,7 @@ if keluhan:
         st.write(hasil.iloc[0]['diagnosis'])
 
         st.subheader("📌 Diagnosis Banding:")
-        for ddx in eval(hasil.iloc[0]['diagnosis_banding']):
+        for ddx in ast.literal_eval()(hasil.iloc[0]['diagnosis_banding']):
             st.write(f"- {ddx}")
 
         st.subheader("💊 Saran Terapi Awal:")
