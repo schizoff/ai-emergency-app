@@ -1,34 +1,22 @@
 
 import streamlit as st
+import pandas as pd
 
-st.title("AI Emergency Assistant")
+st.title("AI Emergency Assistant (Berbasis CSV)")
 
-# Input dari user
-keluhan = st.selectbox("Keluhan Utama", [
-    "Nyeri dada", "Sesak napas", "Penurunan kesadaran", "Demam tinggi",
-    "Nyeri perut kanan bawah", "Muntah darah", "Trauma kepala",
-    "Pingsan", "Kejang", "Nyeri punggung hebat"
-])
+# Load data dari CSV
+data = pd.read_csv("data_kegawatdaruratan.csv")
 
-# Rule-based logic
-def rule_based_diagnosis(keluhan):
-    data = {
-        "Nyeri dada": ("ACS, PE, pneumotoraks", "Aspirin, O2, monitor, EKG"),
-        "Sesak napas": ("Asma, PPOK, edema paru", "O2, nebulisasi, steroid"),
-        "Penurunan kesadaran": ("Hipoglikemia, stroke, sepsis", "Dextrose IV, CT, antibiotik"),
-        "Demam tinggi": ("Sepsis, dengue, malaria", "Cairan IV, antipiretik, antibiotik"),
-        "Nyeri perut kanan bawah": ("Apendisitis, kolesistitis, ISK", "Cairan IV, analgesik, USG"),
-        "Muntah darah": ("Varises esofagus, tukak lambung", "Cairan IV, somatostatin, endoskopi"),
-        "Trauma kepala": ("Cedera otak, perdarahan intraserebral", "CT kepala, observasi"),
-        "Pingsan": ("Vasovagal, hipoglikemia, aritmia", "Observasi, cairan IV, EKG"),
-        "Kejang": ("Epilepsi, hiponatremia, infeksi CNS", "Diazepam IV, cek elektrolit, LP"),
-        "Nyeri punggung hebat": ("Diseksi aorta, kolik nefrolitik", "Pain control, CT angio, kontrol tekanan darah")
-    }
-    return data.get(keluhan, ("Tidak diketahui", "Observasi"))
+# Input keluhan
+keluhan = st.text_input("Masukkan keluhan utama pasien:")
 
 if keluhan:
-    diagnosis, terapi = rule_based_diagnosis(keluhan)
-    st.subheader("Diagnosis Diferensial:")
-    st.write(diagnosis)
-    st.subheader("Saran Terapi Awal:")
-    st.write(terapi)
+    hasil = data[data['keluhan'].str.contains(keluhan, case=False)]
+
+    if not hasil.empty:
+        st.subheader("Diagnosis Diferensial:")
+        st.write(hasil.iloc[0]['diagnosis'])
+        st.subheader("Saran Terapi Awal:")
+        st.write(hasil.iloc[0]['terapi'])
+    else:
+        st.warning("Keluhan tidak ditemukan dalam database.")
