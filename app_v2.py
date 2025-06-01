@@ -5,7 +5,7 @@ import ast
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-st.title("AI Emergency Assistant (Berbasis Anamnesis, PF, Penunjang)")
+st.title("AI Emergency Assistant")
 
 # Load data
 try:
